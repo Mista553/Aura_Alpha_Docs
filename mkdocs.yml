@@ -1,0 +1,49 @@
+site_name: Aura Alpha 开发者文档
+site_url: https://mista553.github.io/Aura_Alpha_Docs/
+repo_url: https://github.com/Mista553/Aura_Alpha_Docs
+repo_name: Mista553/Aura_Alpha_Docs
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+# 核心修正：路径必须与你截图中的文件名完全一致
+nav:
+  - 🏠 快速开始: 00_快速开始/快速开始.md
+  - 🛠️ 硬件规格: 01_硬件规格/硬件规格.md
+  - 🧠 技术原理: 02_技术原理/技术原理.md
+  - 🏗️ 软件架构: 03_软件架构与封装/软件架构与封装.md
+  - 📖 API手册: 04_API_参考手册/API_参考手册.md
+  - 💡 场景示例: 05_二次开发场景示例/二次开发场景示例.md
+  - 🆘 支持: 06_常见问题与支持/常见问题与支持.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
